@@ -73,18 +73,18 @@ export default function RestaurantLayout() {
   return (
     <>
       <CompanyNavbar />
-      <main className="min-h-screen bg-[#14100d] text-white">
+      <main className="min-h-screen overflow-x-hidden bg-[#14100d] text-white">
       <section
         id="home"
-        className="relative overflow-hidden border-b border-white/10 bg-[radial-gradient(circle_at_top_left,_rgba(251,191,36,0.16),_transparent_30%),radial-gradient(circle_at_top_right,_rgba(217,119,6,0.12),_transparent_28%),linear-gradient(180deg,_#1a1410_0%,_#14100d_100%)] pt-28"
+        className="relative overflow-hidden border-b border-white/10 bg-[radial-gradient(circle_at_top_left,_rgba(251,191,36,0.16),_transparent_30%),radial-gradient(circle_at_top_right,_rgba(217,119,6,0.12),_transparent_28%),linear-gradient(180deg,_#1a1410_0%,_#14100d_100%)] pt-40 sm:pt-28"
       >
-        <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 pb-20 lg:grid-cols-[1.02fr_0.98fr]">
+        <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 pb-20 sm:px-6 lg:grid-cols-[1.02fr_0.98fr]">
           <div>
             <p className="inline-flex items-center gap-2 rounded-full border border-amber-200/20 bg-amber-200/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-amber-100">
               Luxury hospitality
             </p>
 
-            <h1 className="mt-6 max-w-3xl text-5xl font-black tracking-tight text-white md:text-7xl">
+            <h1 className="mt-6 max-w-3xl text-4xl font-black tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
               Dining that feels quietly luxurious from the first glance.
             </h1>
 
@@ -95,13 +95,13 @@ export default function RestaurantLayout() {
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <Link
                 href="#services"
-                className="inline-flex items-center justify-center rounded-2xl bg-amber-300 px-8 py-4 text-sm font-semibold text-slate-950 transition hover:-translate-y-0.5 hover:bg-amber-200"
+                className="inline-flex w-full items-center justify-center rounded-2xl bg-amber-300 px-8 py-4 text-sm font-semibold text-slate-950 transition hover:-translate-y-0.5 hover:bg-amber-200 sm:w-auto"
               >
                 Explore Dining
               </Link>
               <Link
                 href="#contact"
-                className="inline-flex items-center justify-center rounded-2xl border border-white/15 bg-white/5 px-8 py-4 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-white/10"
+                className="inline-flex w-full items-center justify-center rounded-2xl border border-white/15 bg-white/5 px-8 py-4 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-white/10 sm:w-auto"
               >
                 Reservation CTA
               </Link>
@@ -123,21 +123,21 @@ export default function RestaurantLayout() {
                 alt="Shreya BNR restaurant dining room"
                 width={1200}
                 height={900}
-                className="h-[420px] w-full object-cover md:h-[520px]"
+                className="h-[280px] w-full object-cover sm:h-[340px] md:h-[420px] lg:h-[520px]"
                 priority
               />
-              <div className="grid grid-cols-3 gap-3 border-t border-white/10 bg-[#1a1410] p-5 text-center">
+              <div className="grid grid-cols-3 gap-2 border-t border-white/10 bg-[#1a1410] p-5 text-center sm:gap-3">
                 <div>
-                  <p className="text-xs uppercase tracking-[0.2em] text-amber-100/70">Rating</p>
-                  <p className="mt-2 text-lg font-semibold text-white">4.8/5</p>
+                  <p className="text-[10px] uppercase tracking-[0.2em] text-amber-100/70 sm:text-xs">Rating</p>
+                  <p className="mt-2 text-base font-semibold text-white sm:text-lg">4.8/5</p>
                 </div>
                 <div>
-                  <p className="text-xs uppercase tracking-[0.2em] text-amber-100/70">Seats</p>
-                  <p className="mt-2 text-lg font-semibold text-white">120+</p>
+                  <p className="text-[10px] uppercase tracking-[0.2em] text-amber-100/70 sm:text-xs">Seats</p>
+                  <p className="mt-2 text-base font-semibold text-white sm:text-lg">120+</p>
                 </div>
                 <div>
-                  <p className="text-xs uppercase tracking-[0.2em] text-amber-100/70">Events</p>
-                  <p className="mt-2 text-lg font-semibold text-white">Private</p>
+                  <p className="text-[10px] uppercase tracking-[0.2em] text-amber-100/70 sm:text-xs">Events</p>
+                  <p className="mt-2 text-base font-semibold text-white sm:text-lg">Private</p>
                 </div>
               </div>
             </div>
@@ -146,7 +146,7 @@ export default function RestaurantLayout() {
       </section>
 
       <section id="about" className="border-b border-white/10 bg-[#181310] py-20">
-        <div className="mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-[1.05fr_0.95fr]">
+        <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1.05fr_0.95fr]">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-amber-100">About Restaurant</p>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-white md:text-5xl">
@@ -180,7 +180,7 @@ export default function RestaurantLayout() {
       </section>
 
       <section id="services" className="border-b border-white/10 bg-[#14100d] py-20">
-        <div className="mx-auto max-w-7xl px-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="max-w-2xl">
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-amber-100">Dining Experience</p>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-white md:text-5xl">
@@ -209,7 +209,7 @@ export default function RestaurantLayout() {
       </section>
 
       <section className="border-b border-white/10 bg-[#181310] py-20">
-        <div className="mx-auto max-w-7xl px-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="max-w-2xl">
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-amber-100">Signature Dishes</p>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-white md:text-5xl">
@@ -235,7 +235,7 @@ export default function RestaurantLayout() {
       </section>
 
       <section id="projects" className="border-b border-white/10 bg-[#14100d] py-20">
-        <div className="mx-auto max-w-7xl px-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
             <div className="max-w-2xl">
               <p className="text-xs font-semibold uppercase tracking-[0.24em] text-amber-100">Gallery Showcase</p>
@@ -278,7 +278,7 @@ export default function RestaurantLayout() {
       </section>
 
       <section className="border-b border-white/10 bg-[#181310] py-20">
-        <div className="mx-auto max-w-7xl px-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="grid gap-4 md:grid-cols-4">
             {[
               { value: "120+", label: "Seats available" },
@@ -299,7 +299,7 @@ export default function RestaurantLayout() {
       </section>
 
       <section id="contact" className="bg-gradient-to-r from-[#2a1b12] via-[#b0894a] to-[#2a1b12] py-20 text-white">
-        <div className="mx-auto max-w-7xl px-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="grid gap-8 rounded-[2rem] bg-black/35 p-8 md:grid-cols-[1.05fr_0.95fr] md:p-12">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.24em] text-amber-100">Reservation CTA</p>

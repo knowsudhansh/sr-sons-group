@@ -89,21 +89,21 @@ export default function ElectronicsLayout() {
   return (
     <>
       <CompanyNavbar />
-      <main className="min-h-screen bg-[#f6f8fc] text-slate-900">
+      <main className="min-h-screen overflow-x-hidden bg-[#f6f8fc] text-slate-900">
       <section
         id="home"
-        className="relative overflow-hidden border-b border-slate-200 bg-gradient-to-b from-white via-white to-slate-50 pt-28"
+        className="relative overflow-hidden border-b border-slate-200 bg-gradient-to-b from-white via-white to-slate-50 pt-40 sm:pt-28"
       >
         <div className="absolute inset-x-0 top-0 h-80 bg-gradient-to-b from-blue-50 to-transparent" />
 
-        <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 pb-20 lg:grid-cols-[1.05fr_0.95fr]">
+        <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 pb-20 sm:px-6 lg:grid-cols-[1.05fr_0.95fr]">
           <div className="relative z-10">
             <p className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-blue-700">
               <Sparkles size={14} />
               Modern electronics retail
             </p>
 
-            <h1 className="mt-6 max-w-3xl text-5xl font-black tracking-tight text-slate-950 md:text-7xl">
+            <h1 className="mt-6 max-w-3xl text-4xl font-black tracking-tight text-slate-950 sm:text-5xl md:text-6xl lg:text-7xl">
               Smart electronics for every modern home.
             </h1>
 
@@ -114,13 +114,13 @@ export default function ElectronicsLayout() {
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <Link
                 href="#services"
-                className="inline-flex items-center justify-center rounded-2xl bg-slate-950 px-8 py-4 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-slate-800"
+                className="inline-flex w-full items-center justify-center rounded-2xl bg-slate-950 px-8 py-4 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-slate-800 sm:w-auto"
               >
                 Browse Categories
               </Link>
               <Link
                 href="#contact"
-                className="inline-flex items-center justify-center rounded-2xl border border-blue-200 bg-white px-8 py-4 text-sm font-semibold text-blue-700 transition hover:-translate-y-0.5 hover:border-blue-300 hover:bg-blue-50"
+                className="inline-flex w-full items-center justify-center rounded-2xl border border-blue-200 bg-white px-8 py-4 text-sm font-semibold text-blue-700 transition hover:-translate-y-0.5 hover:border-blue-300 hover:bg-blue-50 sm:w-auto"
               >
                 Visit Showroom
               </Link>
@@ -142,22 +142,22 @@ export default function ElectronicsLayout() {
                 alt="SR & Sons Electronics showroom"
                 width={1200}
                 height={900}
-                className="h-[420px] w-full object-cover md:h-[520px]"
+                className="h-[280px] w-full object-cover sm:h-[340px] md:h-[420px] lg:h-[520px]"
                 priority
               />
               <div className="border-t border-slate-200 bg-white p-5">
-                <div className="grid grid-cols-3 gap-3 text-center">
+                <div className="grid grid-cols-3 gap-2 text-center sm:gap-3">
                   <div>
-                    <p className="text-xs uppercase tracking-[0.2em] text-slate-500">Brands</p>
-                    <p className="mt-2 text-lg font-semibold text-slate-950">50+</p>
+                    <p className="text-[10px] uppercase tracking-[0.2em] text-slate-500 sm:text-xs">Brands</p>
+                    <p className="mt-2 text-base font-semibold text-slate-950 sm:text-lg">50+</p>
                   </div>
                   <div>
-                    <p className="text-xs uppercase tracking-[0.2em] text-slate-500">Categories</p>
-                    <p className="mt-2 text-lg font-semibold text-slate-950">4</p>
+                    <p className="text-[10px] uppercase tracking-[0.2em] text-slate-500 sm:text-xs">Categories</p>
+                    <p className="mt-2 text-base font-semibold text-slate-950 sm:text-lg">4</p>
                   </div>
                   <div>
-                    <p className="text-xs uppercase tracking-[0.2em] text-slate-500">Support</p>
-                    <p className="mt-2 text-lg font-semibold text-slate-950">24x7</p>
+                    <p className="text-[10px] uppercase tracking-[0.2em] text-slate-500 sm:text-xs">Support</p>
+                    <p className="mt-2 text-base font-semibold text-slate-950 sm:text-lg">24x7</p>
                   </div>
                 </div>
               </div>
@@ -167,7 +167,7 @@ export default function ElectronicsLayout() {
       </section>
 
       <section id="about" className="border-b border-slate-200 bg-white py-20">
-        <div className="mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-[1.08fr_0.92fr]">
+        <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1.08fr_0.92fr]">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-blue-700">Company Overview</p>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-slate-950 md:text-5xl">
@@ -201,7 +201,7 @@ export default function ElectronicsLayout() {
       </section>
 
       <section id="services" className="border-b border-slate-200 bg-slate-50 py-20">
-        <div className="mx-auto max-w-7xl px-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="max-w-2xl">
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-blue-700">Product Categories</p>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-slate-950 md:text-5xl">
@@ -257,7 +257,7 @@ export default function ElectronicsLayout() {
       </section>
 
       <section id="projects" className="border-b border-slate-200 bg-white py-20">
-        <div className="mx-auto max-w-7xl px-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="max-w-2xl">
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-blue-700">Featured Products</p>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-slate-950 md:text-5xl">
@@ -306,7 +306,7 @@ export default function ElectronicsLayout() {
       </section>
 
       <section className="border-b border-slate-200 bg-slate-50 py-20">
-        <div className="mx-auto max-w-7xl px-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="grid gap-4 md:grid-cols-4">
             {[
               { value: "50+", label: "Brand partners" },
@@ -327,7 +327,7 @@ export default function ElectronicsLayout() {
       </section>
 
       <section className="border-b border-slate-200 bg-white py-20">
-        <div className="mx-auto max-w-7xl px-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="max-w-2xl">
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-blue-700">Why Choose Us</p>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-slate-950 md:text-5xl">
@@ -356,7 +356,7 @@ export default function ElectronicsLayout() {
       </section>
 
       <section id="contact" className="bg-gradient-to-r from-slate-950 via-blue-950 to-slate-950 py-20 text-white">
-        <div className="mx-auto max-w-7xl px-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="grid gap-10 rounded-[2rem] border border-white/10 bg-white/5 p-8 md:grid-cols-[1.1fr_0.9fr] md:p-12">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.24em] text-blue-200">Reservation CTA</p>

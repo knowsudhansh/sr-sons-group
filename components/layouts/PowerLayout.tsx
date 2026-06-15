@@ -68,18 +68,18 @@ export default function PowerLayout() {
   return (
     <>
       <CompanyNavbar />
-      <main className="min-h-screen bg-[#07111f] text-white">
+      <main className="min-h-screen overflow-x-hidden bg-[#07111f] text-white">
       <section
         id="home"
-        className="relative overflow-hidden border-b border-white/10 bg-[radial-gradient(circle_at_top_left,_rgba(14,165,233,0.18),_transparent_34%),radial-gradient(circle_at_top_right,_rgba(34,197,94,0.12),_transparent_28%),linear-gradient(180deg,_#091423_0%,_#07111f_100%)] pt-28"
+        className="relative overflow-hidden border-b border-white/10 bg-[radial-gradient(circle_at_top_left,_rgba(14,165,233,0.18),_transparent_34%),radial-gradient(circle_at_top_right,_rgba(34,197,94,0.12),_transparent_28%),linear-gradient(180deg,_#091423_0%,_#07111f_100%)] pt-40 sm:pt-28"
       >
-        <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 pb-20 lg:grid-cols-[1.03fr_0.97fr]">
+        <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 pb-20 sm:px-6 lg:grid-cols-[1.03fr_0.97fr]">
           <div>
             <p className="inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-cyan-200">
               Energy technology
             </p>
 
-            <h1 className="mt-6 max-w-3xl text-5xl font-black tracking-tight text-white md:text-7xl">
+            <h1 className="mt-6 max-w-3xl text-4xl font-black tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
               Reliable backup power for demanding environments.
             </h1>
 
@@ -90,13 +90,13 @@ export default function PowerLayout() {
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <Link
                 href="#services"
-                className="inline-flex items-center justify-center rounded-2xl bg-cyan-400 px-8 py-4 text-sm font-semibold text-slate-950 transition hover:-translate-y-0.5 hover:bg-cyan-300"
+                className="inline-flex w-full items-center justify-center rounded-2xl bg-cyan-400 px-8 py-4 text-sm font-semibold text-slate-950 transition hover:-translate-y-0.5 hover:bg-cyan-300 sm:w-auto"
               >
                 Explore Solutions
               </Link>
               <Link
                 href="#contact"
-                className="inline-flex items-center justify-center rounded-2xl border border-white/15 bg-white/5 px-8 py-4 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-white/10"
+                className="inline-flex w-full items-center justify-center rounded-2xl border border-white/15 bg-white/5 px-8 py-4 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-white/10 sm:w-auto"
               >
                 Talk to an Engineer
               </Link>
@@ -118,23 +118,23 @@ export default function PowerLayout() {
                 alt="Avanti System energy solutions"
                 width={1200}
                 height={900}
-                className="h-[420px] w-full object-cover md:h-[520px]"
+                className="h-[280px] w-full object-cover sm:h-[340px] md:h-[420px] lg:h-[520px]"
                 priority
               />
 
               <div className="border-t border-white/10 bg-[#08101d] p-5">
-                <div className="grid grid-cols-3 gap-3 text-center">
+                <div className="grid grid-cols-3 gap-2 text-center sm:gap-3">
                   <div>
-                    <p className="text-xs uppercase tracking-[0.2em] text-cyan-200/80">Installations</p>
-                    <p className="mt-2 text-lg font-semibold text-white">400+</p>
+                    <p className="text-[10px] uppercase tracking-[0.2em] text-cyan-200/80 sm:text-xs">Installations</p>
+                    <p className="mt-2 text-base font-semibold text-white sm:text-lg">400+</p>
                   </div>
                   <div>
-                    <p className="text-xs uppercase tracking-[0.2em] text-cyan-200/80">Runtime</p>
-                    <p className="mt-2 text-lg font-semibold text-white">Long</p>
+                    <p className="text-[10px] uppercase tracking-[0.2em] text-cyan-200/80 sm:text-xs">Runtime</p>
+                    <p className="mt-2 text-base font-semibold text-white sm:text-lg">Long</p>
                   </div>
                   <div>
-                    <p className="text-xs uppercase tracking-[0.2em] text-cyan-200/80">Support</p>
-                    <p className="mt-2 text-lg font-semibold text-white">24x7</p>
+                    <p className="text-[10px] uppercase tracking-[0.2em] text-cyan-200/80 sm:text-xs">Support</p>
+                    <p className="mt-2 text-base font-semibold text-white sm:text-lg">24x7</p>
                   </div>
                 </div>
               </div>
@@ -144,7 +144,7 @@ export default function PowerLayout() {
       </section>
 
       <section id="about" className="border-b border-white/10 bg-[#08101d] py-20">
-        <div className="mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-[1.05fr_0.95fr]">
+        <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1.05fr_0.95fr]">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-cyan-200">Company Overview</p>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-white md:text-5xl">
@@ -178,7 +178,7 @@ export default function PowerLayout() {
       </section>
 
       <section id="services" className="border-b border-white/10 bg-[#07111f] py-20">
-        <div className="mx-auto max-w-7xl px-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="max-w-2xl">
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-cyan-200">Solutions</p>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-white md:text-5xl">
@@ -207,7 +207,7 @@ export default function PowerLayout() {
       </section>
 
       <section className="border-b border-white/10 bg-[#08101d] py-20">
-        <div className="mx-auto max-w-7xl px-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="grid gap-4 md:grid-cols-3">
             {industries.map((industry) => (
               <div
@@ -223,7 +223,7 @@ export default function PowerLayout() {
       </section>
 
       <section id="projects" className="border-b border-white/10 bg-[#07111f] py-20">
-        <div className="mx-auto max-w-7xl px-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="max-w-2xl">
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-cyan-200">Product Highlights</p>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-white md:text-5xl">
@@ -249,7 +249,7 @@ export default function PowerLayout() {
       </section>
 
       <section className="border-b border-white/10 bg-[#08101d] py-20">
-        <div className="mx-auto max-w-7xl px-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="grid gap-4 md:grid-cols-4">
             {[
               { value: "400+", label: "Backup systems" },
@@ -270,7 +270,7 @@ export default function PowerLayout() {
       </section>
 
       <section id="contact" className="bg-gradient-to-r from-cyan-500 via-cyan-400 to-blue-500 py-20 text-slate-950">
-        <div className="mx-auto max-w-7xl px-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="grid gap-8 rounded-[2rem] bg-white/85 p-8 md:grid-cols-[1.05fr_0.95fr] md:p-12">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-600">Contact</p>

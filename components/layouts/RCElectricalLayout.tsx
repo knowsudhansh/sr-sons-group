@@ -8,17 +8,17 @@ export default function RCElectricalLayout() {
     <>
       <CompanyNavbar />
 
-      <main className="bg-[#070B14] text-white">
+      <main className="overflow-x-hidden bg-[#070B14] text-white">
         {/* Hero Section */}
-        <section id="home" className="min-h-screen pt-32 pb-20 flex items-center relative overflow-hidden">
+        <section id="home" className="min-h-screen relative flex items-center overflow-hidden pt-40 pb-20 sm:pt-32">
           <div className="absolute inset-0 bg-gradient-to-br from-cyan-950 via-black to-black opacity-90" />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60" />
 
           <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-cyan-600/20 rounded-full filter blur-3xl opacity-30 -z-10" />
           <div className="absolute bottom-1/4 right-1/3 w-96 h-96 bg-blue-600/20 rounded-full filter blur-3xl opacity-30 -z-10" />
 
-          <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
-            <div className="grid gap-12 lg:grid-cols-[1.08fr_0.92fr] items-center">
+          <div className="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6">
+            <div className="grid items-center gap-10 lg:grid-cols-[1.08fr_0.92fr]">
               <div className="text-center md:text-left">
                 <div className="inline-block mb-8">
                   <p className="uppercase tracking-[7px] text-cyan-400 text-sm font-medium">
@@ -26,7 +26,7 @@ export default function RCElectricalLayout() {
                   </p>
                 </div>
 
-                <h1 className="text-6xl md:text-8xl font-black tracking-tighter leading-tight mb-8 bg-gradient-to-b from-white via-white to-gray-400 bg-clip-text text-transparent">
+                <h1 className="mb-8 max-w-3xl bg-gradient-to-b from-white via-white to-gray-400 bg-clip-text text-4xl font-black tracking-tighter leading-[0.95] text-transparent sm:text-5xl md:text-6xl lg:text-8xl">
                   Engineering
                   <br />
                   Intelligent
@@ -34,16 +34,16 @@ export default function RCElectricalLayout() {
                   Infrastructure
                 </h1>
 
-                <p className="mt-8 text-lg md:text-xl text-gray-300 max-w-3xl leading-relaxed mb-12">
+                <p className="mt-8 max-w-3xl text-base leading-relaxed text-gray-300 mb-12 sm:text-lg md:text-xl">
                   Premier electrical contracting and power distribution solutions serving commercial, industrial, and critical infrastructure projects across India.
                 </p>
 
-                <div className="flex flex-col md:flex-row gap-4">
-                  <Link href="#contact" className="group px-8 md:px-10 py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-cyan-600 text-black font-bold hover:shadow-[0_0_40px_rgba(34,211,238,0.6)] transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2">
+                <div className="flex flex-col gap-4 md:flex-row">
+                  <Link href="#contact" className="group flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-cyan-500 to-cyan-600 px-8 py-4 font-bold text-black transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(34,211,238,0.6)] md:w-auto md:px-10">
                     Get Proposal
                     <span className="group-hover:translate-x-1 transition-transform">→</span>
                   </Link>
-                  <Link href="#projects" className="px-8 md:px-10 py-4 rounded-xl border-2 border-cyan-400/50 bg-white/5 text-white font-bold hover:bg-white/10 hover:border-cyan-400 hover:shadow-[0_0_30px_rgba(34,211,238,0.4)] transition-all duration-300 backdrop-blur-sm">
+                  <Link href="#projects" className="w-full rounded-xl border-2 border-cyan-400/50 bg-white/5 px-8 py-4 font-bold text-white backdrop-blur-sm transition-all duration-300 hover:border-cyan-400 hover:bg-white/10 hover:shadow-[0_0_30px_rgba(34,211,238,0.4)] md:w-auto md:px-10">
                     View Projects
                   </Link>
                 </div>
@@ -56,22 +56,22 @@ export default function RCElectricalLayout() {
                     alt="RC Electricals industrial project"
                     width={1200}
                     height={900}
-                    className="h-[420px] md:h-[520px] w-full object-cover"
+                    className="h-[280px] w-full object-cover sm:h-[340px] md:h-[420px] lg:h-[520px]"
                   />
                 </div>
 
-                <div className="grid grid-cols-3 gap-3 mt-4">
-                  <div className="rounded-2xl border border-white/10 bg-black/40 backdrop-blur-xl p-4 text-center">
-                    <p className="text-xs uppercase tracking-[0.2em] text-cyan-300">Scope</p>
-                    <p className="mt-2 text-sm text-gray-200">Industrial</p>
+                <div className="mt-4 grid grid-cols-3 gap-2 sm:gap-3">
+                  <div className="rounded-2xl border border-white/10 bg-black/40 p-3 text-center backdrop-blur-xl sm:p-4">
+                    <p className="text-[10px] uppercase tracking-[0.2em] text-cyan-300 sm:text-xs">Scope</p>
+                    <p className="mt-2 text-xs text-gray-200 sm:text-sm">Industrial</p>
                   </div>
-                  <div className="rounded-2xl border border-white/10 bg-black/40 backdrop-blur-xl p-4 text-center">
-                    <p className="text-xs uppercase tracking-[0.2em] text-cyan-300">Delivery</p>
-                    <p className="mt-2 text-sm text-gray-200">Turnkey</p>
+                  <div className="rounded-2xl border border-white/10 bg-black/40 p-3 text-center backdrop-blur-xl sm:p-4">
+                    <p className="text-[10px] uppercase tracking-[0.2em] text-cyan-300 sm:text-xs">Delivery</p>
+                    <p className="mt-2 text-xs text-gray-200 sm:text-sm">Turnkey</p>
                   </div>
-                  <div className="rounded-2xl border border-white/10 bg-black/40 backdrop-blur-xl p-4 text-center">
-                    <p className="text-xs uppercase tracking-[0.2em] text-cyan-300">Support</p>
-                    <p className="mt-2 text-sm text-gray-200">24x7</p>
+                  <div className="rounded-2xl border border-white/10 bg-black/40 p-3 text-center backdrop-blur-xl sm:p-4">
+                    <p className="text-[10px] uppercase tracking-[0.2em] text-cyan-300 sm:text-xs">Support</p>
+                    <p className="mt-2 text-xs text-gray-200 sm:text-sm">24x7</p>
                   </div>
                 </div>
               </div>
@@ -81,7 +81,7 @@ export default function RCElectricalLayout() {
 
         {/* About Section */}
         <section id="about" className="bg-gradient-to-b from-[#070B14] to-black text-white py-40">
-          <div className="max-w-7xl mx-auto px-6">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6">
             <div className="text-center mb-24">
               <p className="uppercase tracking-[7px] text-cyan-400 text-sm font-medium">About Us</p>
               <h2 className="text-5xl md:text-7xl font-black tracking-tighter mt-6">
@@ -151,7 +151,7 @@ export default function RCElectricalLayout() {
         <section id="services" className="bg-black text-white py-40 relative overflow-hidden">
           <div className="absolute top-1/2 left-0 w-96 h-96 bg-cyan-600/10 rounded-full filter blur-3xl opacity-20 -z-10" />
 
-          <div className="max-w-7xl mx-auto px-6">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6">
             <div className="text-center mb-24">
               <p className="uppercase tracking-[7px] text-cyan-400 text-sm font-medium">Core Services</p>
               <h2 className="text-5xl md:text-7xl font-black tracking-tighter mt-6">
@@ -218,7 +218,7 @@ export default function RCElectricalLayout() {
 
         {/* Projects Section */}
         <section id="projects" className="bg-[#070B14] text-white py-40">
-          <div className="max-w-7xl mx-auto px-6">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6">
             <div className="text-center mb-24">
               <p className="uppercase tracking-[7px] text-cyan-400 text-sm font-medium">Portfolio</p>
               <h2 className="text-5xl md:text-7xl font-black tracking-tighter mt-6">
