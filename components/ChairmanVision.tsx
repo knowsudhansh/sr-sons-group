@@ -37,9 +37,9 @@ export default function ChairmanVision() {
             </h2>
 
             <p className="mt-8 text-gray-400 leading-8 text-lg">
-              At S R & Sons Industry Group, our mission is
-              to create long-term value across Electrical,
-              Energy, Electronics and Hospitality sectors
+              At RCS Electricals Pvt. Ltd., our mission is
+              to create long-term value across electrical,
+              energy, electronics and hospitality sectors
               while maintaining excellence, innovation and
               customer trust.
             </p>
@@ -52,9 +52,9 @@ export default function ChairmanVision() {
               border border-white/10
             ">
               <p className="italic text-xl">
-                "Our vision is not only to grow businesses,
+                Our vision is not only to grow businesses,
                 but to build an ecosystem that empowers
-                industries and communities."
+                industries and communities.
               </p>
             </div>
 

@@ -9,7 +9,7 @@ export default function GeneratorLayout() {
         <div className="max-w-7xl mx-auto px-6">
 
           <p className="uppercase tracking-[6px] text-yellow-400">
-            RCS Electricals Pvt Ltd
+            RCS Electricals Pvt. Ltd.
           </p>
 
           <h1 className="text-6xl md:text-8xl font-bold mt-6">

@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "S R & Sons Industry Group",
+  title: "RCS Electricals Pvt. Ltd.",
   description:
-  "Electrical, Power, Electronics, Energy and Hospitality Solutions.",
+    "Electrical contracting, power generation, electronics, energy, and hospitality solutions.",
 };
 
 export default function RootLayout({

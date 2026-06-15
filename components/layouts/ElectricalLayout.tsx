@@ -1,4 +1,4 @@
-
+import Link from "next/link";
 import Image from "next/image";
 import CompanyNavbar from "@/components/company/CompanyNavbar";
 export default function ElectricalLayout() {
@@ -22,7 +22,7 @@ export default function ElectricalLayout() {
             RC Electricals
           </p>
         <Image
-  src="/logos/RC Electricals.png"
+  src="/logos/rc-electricals.png"
   alt="RC Electricals"
   width={120}
   height={120}
@@ -41,7 +41,8 @@ export default function ElectricalLayout() {
 
           <div className="flex flex-wrap gap-4 mt-10">
 
-            <button
+            <Link
+              href="#contact"
               className="
               px-8 py-4
               rounded-2xl
@@ -51,9 +52,10 @@ export default function ElectricalLayout() {
             "
             >
               Get Proposal
-            </button>
+            </Link>
 
-            <button
+            <Link
+              href="#projects"
               className="
               px-8 py-4
               rounded-2xl
@@ -62,7 +64,7 @@ export default function ElectricalLayout() {
             "
             >
               View Projects
-            </button>
+            </Link>
 
           </div>
 
@@ -225,9 +227,13 @@ export default function ElectricalLayout() {
       Need electrical solutions for your project?
     </p>
 
-    <button
+    <Link
+      href="#contact"
       className="
       mt-8
+      inline-flex
+      items-center
+      justify-center
       px-8
       py-4
       rounded-2xl
@@ -237,7 +243,7 @@ export default function ElectricalLayout() {
       "
     >
       Request Proposal
-    </button>
+    </Link>
 
   </div>
 </section>

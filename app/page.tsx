@@ -1,54 +1,53 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import CompanyCard from "@/components/CompanyCard";
 import Footer from "@/components/Footer";
-import WhyChooseUs from "@/components/WhyChooseUs";
-import ChairmanMessage from "@/components/ChairmanMessage";
-import IndustriesSection from "@/components/IndustriesSection";
-import CompanyShowcase from "@/components/CompanyShowcase";
-import Vision2035 from "@/components/Vision2035";
 import Reveal from "@/components/ui/Reveal";
-import GlobalPresence from "@/components/GlobalPresence";
-import ChairmanVision from "@/components/ChairmanVision";
 import ContactCTA from "@/components/ContactCTA";
-// import { companies } from "@/data/companies";
+import RCSAbout from "@/components/rcs/RCSAbout";
+import RCSServices from "@/components/rcs/RCSServices";
+import BusinessDivisions from "@/components/rcs/BusinessDivisions";
+import RCSWhyChoose from "@/components/rcs/RCSWhyChoose";
+import FeaturedProjects from "@/components/rcs/FeaturedProjects";
 
 export default function Home() {
   return (
     <main>
-
       <Navbar />
 
+      {/* Hero - RCS Electricals */}
       <Hero />
-     
-   <Reveal>
-  <IndustriesSection />
-</Reveal>
 
-<Reveal>
-  <CompanyShowcase />
-</Reveal>
+      {/* About RCS Electricals */}
+      <Reveal>
+        <RCSAbout />
+      </Reveal>
 
-<Reveal>
-  <Vision2035 />
-</Reveal>
+      {/* Core Services */}
+      <Reveal>
+        <RCSServices />
+      </Reveal>
 
-<Reveal>
-  <GlobalPresence />
-</Reveal>
+      {/* Why Choose RCS */}
+      <Reveal>
+        <RCSWhyChoose />
+      </Reveal>
 
-<Reveal>
-  <ChairmanVision />
-</Reveal>
+      {/* Business Divisions */}
+      <Reveal>
+        <BusinessDivisions />
+      </Reveal>
 
-<Reveal>
-  <ContactCTA />
-</Reveal>
+      {/* Featured Projects */}
+      <Reveal>
+        <FeaturedProjects />
+      </Reveal>
 
-      <WhyChooseUs />
+      {/* Contact Section */}
+      <Reveal>
+        <ContactCTA />
+      </Reveal>
 
       <Footer />
-
     </main>
   );
 }

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function ContactCTA() {
   return (
     <section
@@ -22,24 +24,28 @@ export default function ContactCTA() {
         >
 
           <p className="uppercase tracking-[5px] text-cyan-400">
-            Let's Connect
+            Get In Touch
           </p>
 
           <h2 className="text-6xl font-bold mt-4">
-            Ready To Work
+            Ready To Discuss
             <br />
-            Together?
+            Your Power Solutions?
           </h2>
 
           <p className="mt-6 text-gray-400 max-w-3xl mx-auto">
-            Partner with S R & Sons Industry Group for
-            Electrical, Power, Electronics, Energy and
-            Hospitality solutions.
+            Partner with RCS Electricals Pvt. Ltd. for
+            reliable power generation and industrial
+            infrastructure solutions tailored to your needs.
           </p>
 
-          <button
+          <Link
+            href="#contact"
             className="
             mt-10
+            inline-flex
+            items-center
+            justify-center
             px-10
             py-5
             rounded-2xl
@@ -52,7 +58,7 @@ export default function ContactCTA() {
             "
           >
             Contact Us
-          </button>
+          </Link>
 
         </div>
 

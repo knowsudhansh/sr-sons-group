@@ -15,7 +15,7 @@ const industries = [
   {
     icon: Factory,
     title: "Generator Solutions",
-    company: "RCS Electricals",
+    company: "RCS Electricals Pvt. Ltd.",
   },
   {
     icon: Tv,
@@ -25,7 +25,7 @@ const industries = [
   {
     icon: BatteryCharging,
     title: "Power Backup Systems",
-    company: "Avanti's System",
+    company: "Avanti System",
   },
   {
     icon: UtensilsCrossed,

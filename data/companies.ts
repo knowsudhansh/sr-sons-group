@@ -9,7 +9,7 @@ export const companies = [
 
   {
     slug: "rcs-electricals",
-    name: "RCS Electricals Pvt Ltd",
+    name: "RCS Electricals Pvt. Ltd.",
     category: "Generator Solutions",
     description:
       "Industrial generator and power solutions provider.",
@@ -25,7 +25,7 @@ export const companies = [
 
   {
     slug: "avanti-system",
-    name: "Avanti's System",
+    name: "Avanti System",
     category: "UPS & Battery Solutions",
     description:
       "UPS, inverter and battery solutions.",

@@ -21,7 +21,7 @@ const companies = [
 
   {
     slug: "rcs-electricals",
-    name: "RCS Electricals",
+    name: "RCS Electricals Pvt. Ltd.",
     title: "Powering Industrial Growth",
     description:
       "Generator and power backup solutions for industries and enterprises.",
@@ -37,7 +37,7 @@ const companies = [
 
   { 
     slug: "sr-sons-electronics",
-    name: "SR Electronics",
+    name: "SR & Sons Electronics",
     title: "Modern Electronics Experience",
     description:
       "Consumer electronics and appliance solutions for homes and businesses.",
@@ -52,6 +52,7 @@ const companies = [
   },
 
   {
+    slug: "avanti-system",
     name: "Avanti System",
     title: "Future Energy Solutions",
     description:

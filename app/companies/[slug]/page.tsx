@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 
-import ElectricalLayout from "@/components/layouts/ElectricalLayout";
+import RCElectricalLayout from "@/components/layouts/RCElectricalLayout";
 import GeneratorLayout from "@/components/layouts/GeneratorLayout";
 import ElectronicsLayout from "@/components/layouts/ElectronicsLayout";
 import PowerLayout from "@/components/layouts/PowerLayout";
@@ -14,7 +14,7 @@ export default async function CompanyPage({
   const { slug } = await params;
 
   if (slug === "rc-electricals") {
-    return <ElectricalLayout />;
+    return <RCElectricalLayout />;
   }
 
   if (slug === "rcs-electricals") {

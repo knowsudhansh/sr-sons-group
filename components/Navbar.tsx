@@ -26,26 +26,18 @@ export default function Navbar() {
       "
       >
         <Link
-          href="#home"
+          href="/"
           className="text-white font-bold text-xl"
         >
-          SR & Sons Industry
+          RCS Electricals Pvt. Ltd.
         </Link>
 
-        <nav
-//   className="
-//   fixed
-//   top-5
-//   left-1/2
-//   -translate-x-1/2
-//   z-50
-//   w-[90%]
-//   max-w-7xl
-//   "
- className="hidden md:flex gap-8 text-white">
+        <nav className="hidden md:flex gap-8 text-white">
           <Link href="#home">Home</Link>
           <Link href="#about">About</Link>
-          <Link href="#companies">Companies</Link>
+          <Link href="#services">Services</Link>
+          <Link href="#divisions">Divisions</Link>
+          <Link href="#projects">Projects</Link>
           <Link href="#contact">Contact</Link>
         </nav>
 
@@ -71,37 +63,49 @@ export default function Navbar() {
           text-white
         "
         >
-          <div className="flex gap-8">
+          <div className="flex flex-col gap-4">
+            <a
+              href="#home"
+              className="hover:text-cyan-400 transition"
+            >
+              Home
+            </a>
 
-  <a
-    href="#home"
-    className="hover:text-cyan-400 transition"
-  >
-    Home
-  </a>
+            <a
+              href="#about"
+              className="hover:text-cyan-400 transition"
+            >
+              About
+            </a>
 
-  <a
-    href="#about"
-    className="hover:text-cyan-400 transition"
-  >
-    About
-  </a>
+            <a
+              href="#services"
+              className="hover:text-cyan-400 transition"
+            >
+              Services
+            </a>
 
-  <a
-    href="#companies"
-    className="hover:text-cyan-400 transition"
-  >
-    Companies
-  </a>
+            <a
+              href="#divisions"
+              className="hover:text-cyan-400 transition"
+            >
+              Divisions
+            </a>
 
-  <a
-    href="#contact"
-    className="hover:text-cyan-400 transition"
-  >
-    Contact
-  </a>
+            <a
+              href="#projects"
+              className="hover:text-cyan-400 transition"
+            >
+              Projects
+            </a>
 
-</div>
+            <a
+              href="#contact"
+              className="hover:text-cyan-400 transition"
+            >
+              Contact
+            </a>
+          </div>
         </div>
       )}
     </header>

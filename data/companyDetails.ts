@@ -14,7 +14,7 @@ export const companyDetails = {
   },
 
   "rcs-electricals": {
-    heroTitle: "RCS Electricals Pvt Ltd",
+    heroTitle: "RCS Electricals Pvt. Ltd.",
     heroSubtitle: "Generator & Power Solutions",
 
     services: [
@@ -40,7 +40,7 @@ export const companyDetails = {
   },
 
   "avanti-system": {
-    heroTitle: "Avanti's System",
+    heroTitle: "Avanti System",
     heroSubtitle: "UPS & Battery Solutions",
 
     services: [

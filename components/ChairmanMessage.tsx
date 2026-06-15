@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function ChairmanMessage() {
   return (
     <section className="py-24 bg-gray-100">
@@ -6,23 +8,25 @@ export default function ChairmanMessage() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
 
           <div>
-            <img
-              src="https://images.unsplash.com/photo-1560250097-0b93528c311a"
-              alt="Chairman"
-              className="rounded-2xl"
+            <Image
+              src="/companies/electrical.png"
+              alt="RCS Electricals leadership"
+              width={960}
+              height={720}
+              className="rounded-2xl w-full h-[420px] object-cover"
             />
           </div>
 
           <div>
             <h2 className="text-5xl font-bold mb-8">
-              Chairman's Message
+              Chairman&apos;s Message
             </h2>
 
             <p className="text-gray-700 text-lg leading-8">
-              Welcome to S R & Sons Industry Group.
+              Welcome to RCS Electricals Pvt. Ltd.
               Our commitment is to deliver excellence across
-              Electrical, Generator, Electronics, Power
-              Solutions and Hospitality sectors.
+              electrical contracting, power systems, consumer electronics,
+              energy solutions, and hospitality services.
             </p>
 
             <h3 className="mt-8 font-bold text-xl">
