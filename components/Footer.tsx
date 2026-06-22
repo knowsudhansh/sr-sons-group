@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-   <footer id="contact" className="bg-slate-950 text-white py-20">
+   <footer className="bg-slate-950 text-white py-20">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid gap-10 md:grid-cols-4 mb-12">
           {/* Company Info */}
@@ -12,7 +12,7 @@ export default function Footer() {
             </p>
             <h3 className="text-xl font-bold text-white">RCS Electricals Pvt. Ltd.</h3>
             <p className="mt-4 text-gray-400 text-sm leading-relaxed max-w-xs">
-              Power generation and industrial infrastructure solutions.
+              Power generation, industrial infrastructure, electronics, energy, and hospitality solutions.
             </p>
           </div>
 
@@ -38,6 +38,11 @@ export default function Footer() {
               <li>
                 <Link href="/companies/shreya-bnr" className="hover:text-cyan-400 transition">
                   Shreya BNR
+                </Link>
+              </li>
+              <li>
+                <Link href="/products" className="hover:text-cyan-400 transition">
+                  Products
                 </Link>
               </li>
             </ul>
@@ -73,6 +78,9 @@ export default function Footer() {
           {/* Contact Info */}
           <div>
             <h4 className="text-sm uppercase tracking-[0.24em] text-white/80 mb-4">Contact</h4>
+            <p className="text-sm text-gray-400 mb-3 leading-relaxed">
+              91-A/C 710, Kamal Niwas, Opp. Radisson Blu, Mohaddipur, Gorakhpur - 273008, Uttar Pradesh, India
+            </p>
             <p className="text-sm text-gray-400 mb-2">Email: info@rcselectricals.com</p>
             <p className="text-sm text-gray-400">Phone: +91 XXXX-XXXXXX</p>
           </div>

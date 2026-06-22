@@ -1,7 +1,9 @@
+import Image from "next/image";
+
 export default function RCSAbout() {
   return (
     <section id="about" className="bg-gradient-to-b from-[#070B14] to-black text-white py-36">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-20 md:mb-24">
           <p className="uppercase tracking-[7px] text-cyan-400 text-sm font-medium">About Us</p>
           <h2 className="text-4xl md:text-7xl font-black tracking-tighter mt-6 leading-[0.95] max-w-4xl mx-auto">
@@ -14,7 +16,7 @@ export default function RCSAbout() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start mb-20 md:mb-24">
+        <div className="grid gap-12 lg:grid-cols-[1fr_0.95fr] lg:gap-16 items-start mb-20 md:mb-24">
           <div>
             <h3 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
               Building Power Solutions That Never Stop
@@ -32,36 +34,56 @@ export default function RCSAbout() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-4 md:gap-6">
-            <div className="group relative bg-gradient-to-br from-cyan-500/10 to-blue-500/5 border border-cyan-400/30 rounded-[28px] p-8 md:p-10 hover:border-cyan-400/70 transition-all duration-300 hover:shadow-[0_0_30px_rgba(34,211,238,0.16)]">
-              <div className="absolute inset-0 rounded-[28px] bg-gradient-to-br from-cyan-600/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-              <div className="relative">
-                <h4 className="text-5xl font-black text-cyan-400 mb-3">25+</h4>
-                <p className="text-gray-400 font-medium">Years of Excellence</p>
+          <div className="space-y-6">
+            <div className="overflow-hidden rounded-[28px] border border-white/10 bg-white/[0.03] shadow-[0_20px_70px_rgba(0,0,0,0.22)]">
+              <Image
+                src="/companies/electrical.png"
+                alt="RCS Electricals power infrastructure"
+                width={1200}
+                height={800}
+                className="h-72 w-full object-cover sm:h-80"
+              />
+              <div className="border-t border-white/10 px-6 py-5">
+                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-cyan-400">
+                  Project focus
+                </p>
+                <p className="mt-2 text-sm leading-6 text-gray-400">
+                  Industrial sites, campuses, and critical infrastructure where power reliability matters most.
+                </p>
               </div>
             </div>
 
-            <div className="group relative bg-gradient-to-br from-cyan-500/10 to-blue-500/5 border border-cyan-400/30 rounded-[28px] p-8 md:p-10 hover:border-cyan-400/70 transition-all duration-300 hover:shadow-[0_0_30px_rgba(34,211,238,0.16)]">
-              <div className="absolute inset-0 rounded-[28px] bg-gradient-to-br from-cyan-600/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-              <div className="relative">
-                <h4 className="text-5xl font-black text-cyan-400 mb-3">5000+</h4>
-                <p className="text-gray-400 font-medium">Systems Installed</p>
+            <div className="grid grid-cols-2 gap-4 md:gap-6">
+              <div className="group relative rounded-[28px] border border-cyan-400/30 bg-gradient-to-br from-cyan-500/10 to-blue-500/5 p-8 transition-all duration-300 hover:border-cyan-400/70 hover:shadow-[0_0_30px_rgba(34,211,238,0.16)]">
+                <div className="absolute inset-0 rounded-[28px] bg-gradient-to-br from-cyan-600/5 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
+                <div className="relative">
+                  <h4 className="mb-3 text-5xl font-black text-cyan-400">25+</h4>
+                  <p className="font-medium text-gray-400">Years of Excellence</p>
+                </div>
               </div>
-            </div>
 
-            <div className="group relative bg-gradient-to-br from-cyan-500/10 to-blue-500/5 border border-cyan-400/30 rounded-[28px] p-8 md:p-10 hover:border-cyan-400/70 transition-all duration-300 hover:shadow-[0_0_30px_rgba(34,211,238,0.16)]">
-              <div className="absolute inset-0 rounded-[28px] bg-gradient-to-br from-cyan-600/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-              <div className="relative">
-                <h4 className="text-5xl font-black text-cyan-400 mb-3">1000+</h4>
-                <p className="text-gray-400 font-medium">Satisfied Clients</p>
+              <div className="group relative rounded-[28px] border border-cyan-400/30 bg-gradient-to-br from-cyan-500/10 to-blue-500/5 p-8 transition-all duration-300 hover:border-cyan-400/70 hover:shadow-[0_0_30px_rgba(34,211,238,0.16)]">
+                <div className="absolute inset-0 rounded-[28px] bg-gradient-to-br from-cyan-600/5 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
+                <div className="relative">
+                  <h4 className="mb-3 text-5xl font-black text-cyan-400">5000+</h4>
+                  <p className="font-medium text-gray-400">Systems Installed</p>
+                </div>
               </div>
-            </div>
 
-            <div className="group relative bg-gradient-to-br from-cyan-500/10 to-blue-500/5 border border-cyan-400/30 rounded-[28px] p-8 md:p-10 hover:border-cyan-400/70 transition-all duration-300 hover:shadow-[0_0_30px_rgba(34,211,238,0.16)]">
-              <div className="absolute inset-0 rounded-[28px] bg-gradient-to-br from-cyan-600/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-              <div className="relative">
-                <h4 className="text-5xl font-black text-cyan-400 mb-3">30+</h4>
-                <p className="text-gray-400 font-medium">Industries Served</p>
+              <div className="group relative rounded-[28px] border border-cyan-400/30 bg-gradient-to-br from-cyan-500/10 to-blue-500/5 p-8 transition-all duration-300 hover:border-cyan-400/70 hover:shadow-[0_0_30px_rgba(34,211,238,0.16)]">
+                <div className="absolute inset-0 rounded-[28px] bg-gradient-to-br from-cyan-600/5 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
+                <div className="relative">
+                  <h4 className="mb-3 text-5xl font-black text-cyan-400">1000+</h4>
+                  <p className="font-medium text-gray-400">Satisfied Clients</p>
+                </div>
+              </div>
+
+              <div className="group relative rounded-[28px] border border-cyan-400/30 bg-gradient-to-br from-cyan-500/10 to-blue-500/5 p-8 transition-all duration-300 hover:border-cyan-400/70 hover:shadow-[0_0_30px_rgba(34,211,238,0.16)]">
+                <div className="absolute inset-0 rounded-[28px] bg-gradient-to-br from-cyan-600/5 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
+                <div className="relative">
+                  <h4 className="mb-3 text-5xl font-black text-cyan-400">30+</h4>
+                  <p className="font-medium text-gray-400">Industries Served</p>
+                </div>
               </div>
             </div>
           </div>

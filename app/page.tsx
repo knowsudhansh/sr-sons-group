@@ -33,9 +33,11 @@ export default function Home() {
       </Reveal>
 
       {/* Business Divisions */}
-      <Reveal>
-        <BusinessDivisions />
-      </Reveal>
+      <div className="hidden">
+        <Reveal>
+          <BusinessDivisions />
+        </Reveal>
+      </div>
 
       {/* Featured Projects */}
       <Reveal>

@@ -36,8 +36,8 @@ export default function Navbar() {
           <Link href="#home">Home</Link>
           <Link href="#about">About</Link>
           <Link href="#services">Services</Link>
-          <Link href="#divisions">Divisions</Link>
           <Link href="#projects">Projects</Link>
+          <Link href="/products#products">Products</Link>
           <Link href="#contact">Contact</Link>
         </nav>
 
@@ -97,6 +97,13 @@ export default function Navbar() {
               className="hover:text-cyan-400 transition"
             >
               Projects
+            </a>
+
+            <a
+              href="/products#products"
+              className="hover:text-cyan-400 transition"
+            >
+              Products
             </a>
 
             <a
