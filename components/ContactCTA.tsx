@@ -55,14 +55,14 @@ export default function ContactCTA() {
         <div className="grid gap-10 rounded-[2rem] border border-white/10 bg-white/[0.03] p-6 shadow-[0_20px_70px_rgba(0,0,0,0.25)] backdrop-blur-xl lg:grid-cols-[1.02fr_0.98fr] lg:p-10">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-cyan-400">
-              Contact
+              Showroom & Contact
             </p>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-white md:text-5xl">
-              Visit the RCS Electricals team in Gorakhpur.
+              Visit the RCS Electricals showroom in Gorakhpur.
             </h2>
             <p className="mt-5 max-w-2xl text-base leading-8 text-gray-300 md:text-lg">
-              Corporate office access, project consultations, product enquiries,
-              and service support are all handled from one place.
+              Corporate office access, product enquiries, showroom visits, and
+              service support are all handled from one place.
             </p>
 
             <div className="mt-10 grid gap-4 sm:grid-cols-2">
@@ -93,7 +93,7 @@ export default function ContactCTA() {
                 href="tel:+91XXXXXXXXXX"
                 className="inline-flex w-full items-center justify-center rounded-2xl bg-cyan-500 px-8 py-4 text-sm font-semibold text-black transition hover:-translate-y-0.5 hover:bg-cyan-400 sm:w-auto"
               >
-                Call Office
+                Call Us
               </Link>
               <Link
                 href="/products"

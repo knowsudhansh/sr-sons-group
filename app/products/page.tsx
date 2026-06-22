@@ -170,14 +170,14 @@ export default function ProductsPage() {
         <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[1.02fr_0.98fr]">
           <div className="relative z-10">
             <p className="inline-flex rounded-full border border-cyan-400/20 bg-cyan-400/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-cyan-200">
-              Product Showcase
+              Showroom Products
             </p>
             <h1 className="mt-6 max-w-3xl text-4xl font-black tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
-              Browse products with real showroom photos and clear buying support.
+              Continue your showroom visit with the full product range.
             </h1>
             <p className="mt-6 max-w-2xl text-base leading-8 text-gray-300 md:text-lg">
-              RCS Electricals Pvt. Ltd. now presents a polished retail-style
-              product experience with uploaded store photos, real product
+              RCS Electricals Pvt. Ltd. presents a polished retail-style
+              product experience with uploaded showroom photos, real product
               images, and direct enquiry actions.
             </p>
 

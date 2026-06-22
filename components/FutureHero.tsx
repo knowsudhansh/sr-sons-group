@@ -1,8 +1,13 @@
 import Image from "next/image";
-import FloatingOrb from "./FloatingOrb";
-import AnimatedCounter from "./ui/AnimatedCounter";
 import Link from "next/link";
-import { ChevronDown } from "lucide-react";
+import { ArrowRight, ChevronDown } from "lucide-react";
+
+const heroStats = [
+  { value: "4+", label: "Product categories" },
+  { value: "1", label: "Physical showroom" },
+  { value: "7", label: "Days support" },
+  { value: "24x7", label: "Inquiry window" },
+];
 
 export default function FutureHero() {
   return (
@@ -10,116 +15,115 @@ export default function FutureHero() {
       id="home"
       className="relative min-h-screen overflow-hidden bg-black px-0 pt-36 pb-24 text-white"
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-950 via-black to-cyan-950 opacity-90" />
-      <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60" />
-
-      <div className="absolute top-1/4 left-1/4 h-96 w-96 rounded-full bg-cyan-600/20 opacity-30 blur-3xl -z-10" />
-      <div className="absolute bottom-1/4 right-1/4 h-96 w-96 rounded-full bg-blue-600/20 opacity-30 blur-3xl -z-10" />
-
-      <FloatingOrb />
+      <div className="absolute inset-0 bg-gradient-to-br from-cyan-950 via-black to-slate-950 opacity-95" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70" />
 
       <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-[1.02fr_0.98fr]">
         <div className="text-center lg:text-left">
-          <div className="inline-block mb-8">
-            <p className="uppercase tracking-[7px] text-cyan-400 text-sm font-medium">
+          <div className="inline-block">
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
               RCS Electricals Pvt. Ltd.
             </p>
           </div>
 
-          <h1 className="mx-auto max-w-3xl text-5xl font-black tracking-tighter leading-[0.95] bg-gradient-to-b from-white via-white to-gray-400 bg-clip-text text-transparent md:text-7xl lg:mx-0 lg:text-8xl">
-            Power Generation &
+          <h1 className="mx-auto mt-6 max-w-3xl text-5xl font-black tracking-tight leading-[0.95] text-white md:text-7xl lg:mx-0 lg:text-8xl">
+            Electricals, products,
             <br />
-            Industrial Solutions
+            showroom support.
           </h1>
 
           <p className="mx-auto mt-8 max-w-3xl text-lg leading-relaxed text-gray-300 md:text-xl lg:mx-0">
-            Delivering mission-critical power systems and infrastructure
-            solutions for industries, enterprise campuses, and commercial
-            facilities.
+            From our Gorakhpur showroom, we help customers discover trusted
+            appliances, compare product ranges, and connect with electrical
+            support under one business.
           </p>
-          <p className="mx-auto mt-4 max-w-3xl text-sm uppercase tracking-[0.25em] text-gray-400 lg:mx-0">
-            Built for factories, campuses, and critical facilities that need
-            dependable power every day.
+          <p className="mx-auto mt-4 max-w-3xl text-sm uppercase tracking-[0.24em] text-gray-400 lg:mx-0">
+            Company, store, products, services, and showroom guidance in one
+            place.
           </p>
 
           <div className="mt-12 flex flex-col gap-4 sm:flex-row lg:justify-start">
             <Link
               href="#services"
-              className="inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-cyan-500 to-cyan-600 px-8 py-4 font-bold text-black transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_40px_rgba(34,211,238,0.45)] sm:w-auto md:px-10"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-cyan-400 px-8 py-4 font-semibold text-slate-950 transition hover:-translate-y-0.5 hover:bg-cyan-300 sm:w-auto md:px-10"
             >
               Explore Services
-              <span>→</span>
+              <ArrowRight size={16} />
             </Link>
             <Link
-              href="/products"
-              className="inline-flex w-full items-center justify-center rounded-2xl border border-cyan-400/40 bg-white/5 px-8 py-4 font-bold text-white backdrop-blur-sm transition-all duration-300 hover:border-cyan-300 hover:bg-white/10 hover:shadow-[0_0_24px_rgba(34,211,238,0.25)] sm:w-auto md:px-10"
+              href="/products#products"
+              className="inline-flex w-full items-center justify-center rounded-2xl border border-white/15 bg-white/5 px-8 py-4 font-semibold text-white transition hover:-translate-y-0.5 hover:bg-white/10 sm:w-auto md:px-10"
             >
               View Products
+            </Link>
+            <Link
+              href="#showroom"
+              className="inline-flex w-full items-center justify-center rounded-2xl border border-cyan-400/30 bg-cyan-500/10 px-8 py-4 font-semibold text-cyan-100 transition hover:-translate-y-0.5 hover:bg-cyan-500/20 sm:w-auto md:px-10"
+            >
+              Visit Showroom
             </Link>
           </div>
 
           <div className="mx-auto mt-16 grid max-w-5xl grid-cols-2 gap-4 md:grid-cols-4 lg:mx-0">
-            <div className="group relative rounded-[24px] border border-cyan-400/20 bg-white/10 p-6 backdrop-blur-xl transition-all duration-300 hover:border-cyan-400/50 hover:shadow-[0_0_24px_rgba(34,211,238,0.2)]">
-              <div className="relative">
-                <AnimatedCounter value={25} label="Years" />
-                <p className="mt-1 text-xs text-gray-400">Experience</p>
+            {heroStats.map((stat) => (
+              <div
+                key={stat.label}
+                className="rounded-[24px] border border-cyan-400/20 bg-white/[0.08] p-5 backdrop-blur-xl transition hover:border-cyan-300/40 hover:bg-white/10"
+              >
+                <p className="text-3xl font-black text-cyan-300 md:text-4xl">
+                  {stat.value}
+                </p>
+                <p className="mt-1 text-xs uppercase tracking-[0.2em] text-gray-300">
+                  {stat.label}
+                </p>
               </div>
-            </div>
-
-            <div className="group relative rounded-[24px] border border-cyan-400/20 bg-white/10 p-6 backdrop-blur-xl transition-all duration-300 hover:border-cyan-400/50 hover:shadow-[0_0_24px_rgba(34,211,238,0.2)]">
-              <div className="relative">
-                <AnimatedCounter value={5000} label="Systems" />
-                <p className="mt-1 text-xs text-gray-400">Installed</p>
-              </div>
-            </div>
-
-            <div className="group relative rounded-[24px] border border-cyan-400/20 bg-white/10 p-6 backdrop-blur-xl transition-all duration-300 hover:border-cyan-400/50 hover:shadow-[0_0_24px_rgba(34,211,238,0.2)]">
-              <div className="relative">
-                <AnimatedCounter value={1000} label="Clients" />
-                <p className="mt-1 text-xs text-gray-400">Worldwide</p>
-              </div>
-            </div>
-
-            <div className="group relative rounded-[24px] border border-cyan-400/20 bg-white/10 p-6 backdrop-blur-xl transition-all duration-300 hover:border-cyan-400/50 hover:shadow-[0_0_24px_rgba(34,211,238,0.2)]">
-              <div className="relative">
-                <p className="text-4xl font-bold text-cyan-400">99.8%</p>
-                <p className="mt-1 text-xs text-gray-400">Uptime</p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
 
         <div className="relative">
           <div className="absolute -inset-6 rounded-[2rem] bg-cyan-500/10 blur-3xl" />
-          <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04] shadow-[0_24px_90px_rgba(0,0,0,0.35)]">
-            <Image
-              src="/companies/generator.png"
-              alt="RCS Electricals generator and power infrastructure"
-              width={1200}
-              height={900}
-              className="h-[320px] w-full object-cover sm:h-[380px] md:h-[460px]"
-              priority
-            />
-            <div className="grid grid-cols-3 gap-3 border-t border-white/10 bg-black/60 p-5 text-center">
-              <div>
-                <p className="text-[10px] uppercase tracking-[0.2em] text-cyan-300 sm:text-xs">
-                  Scope
-                </p>
-                <p className="mt-2 text-xs text-gray-200 sm:text-sm">Industrial</p>
-              </div>
-              <div>
-                <p className="text-[10px] uppercase tracking-[0.2em] text-cyan-300 sm:text-xs">
-                  Delivery
-                </p>
-                <p className="mt-2 text-xs text-gray-200 sm:text-sm">Turnkey</p>
-              </div>
-              <div>
-                <p className="text-[10px] uppercase tracking-[0.2em] text-cyan-300 sm:text-xs">
-                  Support
-                </p>
-                <p className="mt-2 text-xs text-gray-200 sm:text-sm">24x7</p>
-              </div>
+          <div className="relative grid gap-4 sm:grid-cols-2">
+            <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04] shadow-[0_24px_90px_rgba(0,0,0,0.35)] sm:row-span-2">
+              <Image
+                src="/uploads/store-03.jpg"
+                alt="RCS Electricals showroom view"
+                width={1200}
+                height={900}
+                className="h-[360px] w-full object-cover sm:h-[520px]"
+                priority
+              />
             </div>
+
+            <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04] shadow-[0_24px_90px_rgba(0,0,0,0.25)]">
+              <Image
+                src="/uploads/product-03.jpg"
+                alt="Featured product display"
+                width={900}
+                height={700}
+                className="h-44 w-full object-cover"
+              />
+            </div>
+
+            <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04] shadow-[0_24px_90px_rgba(0,0,0,0.25)]">
+              <Image
+                src="/uploads/store-05.jpg"
+                alt="Premium showroom aisle"
+                width={900}
+                height={700}
+                className="h-44 w-full object-cover"
+              />
+            </div>
+          </div>
+
+          <div className="mt-4 rounded-[1.75rem] border border-white/10 bg-black/55 px-5 py-4 backdrop-blur-xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-cyan-300">
+              Showroom first
+            </p>
+            <p className="mt-2 text-sm leading-6 text-gray-300">
+              Browse the store, compare products, and get support from the same
+              team that manages the company.
+            </p>
           </div>
         </div>
       </div>

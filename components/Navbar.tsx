@@ -4,6 +4,15 @@ import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
+const navItems = [
+  { href: "#home", label: "Home" },
+  { href: "#about", label: "About" },
+  { href: "#services", label: "Services" },
+  { href: "#projects", label: "Projects" },
+  { href: "/products#products", label: "Products" },
+  { href: "#contact", label: "Contact" },
+];
+
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
@@ -33,12 +42,11 @@ export default function Navbar() {
         </Link>
 
         <nav className="hidden md:flex gap-8 text-white">
-          <Link href="#home">Home</Link>
-          <Link href="#about">About</Link>
-          <Link href="#services">Services</Link>
-          <Link href="#projects">Projects</Link>
-          <Link href="/products#products">Products</Link>
-          <Link href="#contact">Contact</Link>
+          {navItems.map((item) => (
+            <Link key={item.label} href={item.href}>
+              {item.label}
+            </Link>
+          ))}
         </nav>
 
         <button
@@ -64,54 +72,16 @@ export default function Navbar() {
         "
         >
           <div className="flex flex-col gap-4">
-            <a
-              href="#home"
-              className="hover:text-cyan-400 transition"
-            >
-              Home
-            </a>
-
-            <a
-              href="#about"
-              className="hover:text-cyan-400 transition"
-            >
-              About
-            </a>
-
-            <a
-              href="#services"
-              className="hover:text-cyan-400 transition"
-            >
-              Services
-            </a>
-
-            <a
-              href="#divisions"
-              className="hover:text-cyan-400 transition"
-            >
-              Divisions
-            </a>
-
-            <a
-              href="#projects"
-              className="hover:text-cyan-400 transition"
-            >
-              Projects
-            </a>
-
-            <a
-              href="/products#products"
-              className="hover:text-cyan-400 transition"
-            >
-              Products
-            </a>
-
-            <a
-              href="#contact"
-              className="hover:text-cyan-400 transition"
-            >
-              Contact
-            </a>
+            {navItems.map((item) => (
+              <Link
+                key={item.label}
+                href={item.href}
+                className="hover:text-cyan-400 transition"
+                onClick={() => setOpen(false)}
+              >
+                {item.label}
+              </Link>
+            ))}
           </div>
         </div>
       )}
