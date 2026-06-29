@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
@@ -34,11 +35,18 @@ export default function Navbar() {
         justify-between
       "
       >
-        <Link
-          href="/"
-          className="text-white font-bold text-xl"
-        >
-          RCS Electricals Pvt. Ltd.
+        <Link href="/" className="flex items-center gap-3 text-white">
+          <Image
+            src="/brand/rcs-logo.png"
+            alt="RCS Electricals logo"
+            width={40}
+            height={40}
+            className="h-10 w-10 shrink-0 object-contain"
+            priority
+          />
+          <span className="text-lg font-bold tracking-tight sm:text-xl">
+            RCS Electricals Pvt. Ltd.
+          </span>
         </Link>
 
         <nav className="hidden md:flex gap-8 text-white">

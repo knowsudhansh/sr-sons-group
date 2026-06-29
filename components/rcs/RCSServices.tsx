@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   BellRing,
   Boxes,
@@ -13,24 +14,44 @@ const services = [
     title: "Product Guidance",
     description:
       "Helpful in-store guidance for appliances, electrical products, and category comparisons.",
+    href:
+      "https://wa.me/919554678888?text=" +
+      encodeURIComponent(
+        "Hello,\nI would like to know more about Product Guidance and available products at RCS Electricals Pvt. Ltd.",
+      ),
   },
   {
     icon: Truck,
     title: "Delivery & Setup",
     description:
       "Smooth local delivery and showroom handoff for customers buying large products or bundles.",
+    href:
+      "https://wa.me/919554678888?text=" +
+      encodeURIComponent(
+        "Hello,\nI would like information regarding Delivery & Setup services.",
+      ),
   },
   {
     icon: Wrench,
     title: "Installation Support",
     description:
       "Practical installation help and setup assistance for product categories that need it.",
+    href:
+      "https://wa.me/919554678888?text=" +
+      encodeURIComponent(
+        "Hello,\nI would like to know about Installation Support for your products.",
+      ),
   },
   {
     icon: ShieldCheck,
-    title: "After-Sales Care",
+    title: "Customer-first Service",
     description:
       "Reliable support after purchase so the relationship continues beyond the showroom visit.",
+    href:
+      "mailto:rcselectricalspvtltd@gmail.com?subject=Customer%20Service%20Enquiry&body=" +
+      encodeURIComponent(
+        "Hello,\n\nI would like to know more about your customer support and after-sales services.\n\nThank you.",
+      ),
   },
 ];
 
@@ -59,8 +80,11 @@ export default function RCSServices() {
           {services.map((service) => {
             const Icon = service.icon;
             return (
-              <div
+              <Link
                 key={service.title}
+                href={service.href}
+                target={service.href.startsWith("mailto:") ? undefined : "_blank"}
+                rel={service.href.startsWith("mailto:") ? undefined : "noreferrer"}
                 className="group relative min-h-[220px] overflow-hidden rounded-[28px] border border-cyan-400/20 bg-gradient-to-br from-white/[0.08] to-white/[0.03] p-8 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-300/50 hover:shadow-[0_0_28px_rgba(34,211,238,0.16)] md:p-9"
               >
                 <div className="absolute inset-0 rounded-[28px] bg-gradient-to-br from-cyan-600/10 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
@@ -79,7 +103,7 @@ export default function RCSServices() {
                 </div>
 
                 <div className="absolute bottom-0 left-0 h-1 w-0 bg-gradient-to-r from-cyan-400 to-transparent transition-all duration-300 group-hover:w-full" />
-              </div>
+              </Link>
             );
           })}
         </div>

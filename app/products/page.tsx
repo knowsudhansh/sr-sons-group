@@ -173,7 +173,7 @@ export default function ProductsPage() {
               Showroom Products
             </p>
             <h1 className="mt-6 max-w-3xl text-4xl font-black tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
-              Continue your showroom visit with the full product range.
+              Continue showroom visit  for the full product range.
             </h1>
             <p className="mt-6 max-w-2xl text-base leading-8 text-gray-300 md:text-lg">
               RCS Electricals Pvt. Ltd. presents a polished retail-style

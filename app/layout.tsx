@@ -17,6 +17,10 @@ export const metadata: Metadata = {
   title: "RCS Electricals Pvt. Ltd. | Corporate Website and Product Showcase",
   description:
     "Electrical contracting, power generation, electronics, energy, hospitality, and products for corporate and retail visitors.",
+  icons: {
+    icon: "/icon.png",
+    apple: "/apple-icon.png",
+  },
 };
 
 export default function RootLayout({

@@ -1,7 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowUpRight,
-  Building2,
   Clock3,
   Mail,
   MapPin,
@@ -17,15 +17,13 @@ Gorakhpur - 273008,
 Uttar Pradesh,
 India`;
 
-const phoneNumbers = ["+91 95546 78888", "+91 96217 98631"];
+const phoneNumber = "+91 95546 78888";
 const emailAddress = "rcselectricalspvtltd@gmail.com";
 
-const mapSrc =
-  "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1760.936521144069!2d83.43135311683305!3d26.729638452747288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDQzJzQzLjYiTiA4M8KwMjUnNTMuOCJF!5e1!3m2!1sen!2sin!4v1782405890615!5m2!1sen!2sin";
+const mapSrc = "https://www.google.com/maps?q=26.7287778,83.4316111&z=18&output=embed";
 
-const directionsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-  officeAddress.replace(/\n/g, " "),
-)}`;
+const directionsUrl =
+  "https://www.google.com/maps/place/26%C2%B043'43.6%22N+83%C2%B025'53.8%22E/@26.729638,83.431353,389m/data=!3m1!1e3!4m4!3m3!8m2!3d26.7287778!4d83.4316111?entry=tts&g_ep=EgoyMDI2MDYyNC4wIPu8ASoASAFQAw%3D%3D&skid=c606192e-d679-472d-bbae-641524fdab5f";
 
 export default function ContactCTA() {
   return (
@@ -49,9 +47,13 @@ export default function ContactCTA() {
           <div className="grid gap-8 lg:grid-cols-[0.42fr_0.58fr]">
             <div className="rounded-[28px] border border-white/10 bg-black/30 p-6 md:p-8">
               <div className="flex items-start gap-4">
-                <div className="inline-flex rounded-2xl bg-cyan-500/10 p-3 text-cyan-300">
-                  <Building2 size={20} />
-                </div>
+                <Image
+                  src="/brand/rcs-logo.png"
+                  alt="RCS Electricals logo"
+                  width={52}
+                  height={52}
+                  className="h-12 w-12 shrink-0 object-contain"
+                />
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-[0.28em] text-cyan-300">
                     Company
@@ -84,16 +86,12 @@ export default function ContactCTA() {
                         <Phone size={16} />
                       </span>
                       <p className="text-xs font-semibold uppercase tracking-[0.24em] text-gray-400">
-                        Phone Numbers
+                        Phone Number
                       </p>
                     </div>
-                    <div className="mt-4 space-y-2">
-                      {phoneNumbers.map((phone) => (
-                        <p key={phone} className="text-base font-semibold text-white">
-                          {phone}
-                        </p>
-                      ))}
-                    </div>
+                    <p className="mt-4 text-base font-semibold text-white">
+                      {phoneNumber}
+                    </p>
                   </div>
 
                   <div className="rounded-[24px] border border-white/10 bg-white/[0.03] p-5">
@@ -121,9 +119,9 @@ export default function ContactCTA() {
                     </p>
                   </div>
                   <div className="mt-4 space-y-1 text-base leading-7 text-gray-200">
-                    <p>ALL DAY</p>
-                    <p>10:00 AM - 8:30 PM</p>
-            
+                    <p>Monday - Saturday</p>
+                    <p>10:00 AM - 7:00 PM</p>
+                    <p>Sunday by Appointment</p>
                   </div>
                 </div>
               </div>
@@ -165,15 +163,11 @@ export default function ContactCTA() {
             <div className="space-y-5">
               <div
                 id="contact-map"
-                className="overflow-hidden rounded-[28px] border border-white/10 bg-black/40 scroll-mt-28"
+                className="scroll-mt-28 overflow-hidden rounded-[28px] border border-white/10 bg-black/40"
               >
                 <div className="border-b border-white/10 px-5 py-4 md:px-6">
                   <p className="text-xs font-semibold uppercase tracking-[0.28em] text-cyan-300">
                     Google Map
-                  </p>
-                  <p className="mt-2 text-sm leading-6 text-gray-300">
-                    The embedded location is shown below for quick direction
-                    checks and showroom visits.
                   </p>
                 </div>
                 <iframe

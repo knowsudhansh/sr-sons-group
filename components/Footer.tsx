@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
@@ -7,10 +8,23 @@ export default function Footer() {
         <div className="grid gap-10 md:grid-cols-4 mb-12">
           {/* Company Info */}
           <div>
-            <p className="text-xs uppercase tracking-[0.3em] text-cyan-400 mb-3">
-              Main Company
-            </p>
-            <h3 className="text-xl font-bold text-white">RCS Electricals Pvt. Ltd.</h3>
+            <div className="mb-4 flex items-center gap-3">
+              <Image
+                src="/brand/rcs-logo.png"
+                alt="RCS Electricals logo"
+                width={48}
+                height={48}
+                className="h-12 w-12 shrink-0 object-contain"
+              />
+              <div>
+                <p className="text-xs uppercase tracking-[0.3em] text-cyan-400">
+                  Main Company
+                </p>
+                <h3 className="text-xl font-bold text-white">
+                  RCS Electricals Pvt. Ltd.
+                </h3>
+              </div>
+            </div>
             <p className="mt-4 text-gray-400 text-sm leading-relaxed max-w-xs">
               Power generation, industrial infrastructure, electronics, energy, and hospitality solutions.
             </p>
@@ -20,31 +34,10 @@ export default function Footer() {
           <div>
             <h4 className="text-sm uppercase tracking-[0.24em] text-white/80 mb-4">Business Divisions</h4>
             <ul className="space-y-2 text-sm text-gray-400">
-              <li>
-                <Link href="/companies/rc-electricals" className="hover:text-cyan-400 transition">
-                  RC Electricals
-                </Link>
-              </li>
-              <li>
-                <Link href="/companies/sr-sons-electronics" className="hover:text-cyan-400 transition">
-                  SR & Sons Electronics
-                </Link>
-              </li>
-              <li>
-                <Link href="/companies/avanti-system" className="hover:text-cyan-400 transition">
-                  Avanti System
-                </Link>
-              </li>
-              <li>
-                <Link href="/companies/shreya-bnr" className="hover:text-cyan-400 transition">
-                  Shreya BNR
-                </Link>
-              </li>
-              <li>
-                <Link href="/products" className="hover:text-cyan-400 transition">
-                  Products
-                </Link>
-              </li>
+              <li className="text-gray-400">RC Electricals</li>
+              <li className="text-gray-400">SR &amp; Sons Electronics</li>
+              <li className="text-gray-400">Avanti System</li>
+              <li className="text-gray-400">FOI Cafe &amp; Restaurant</li>
             </ul>
           </div>
 

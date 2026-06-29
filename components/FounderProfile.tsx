@@ -14,7 +14,7 @@ export default function FounderProfile() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="mb-12 text-center md:mb-16">
           <p className="text-sm font-medium uppercase tracking-[0.3em] text-cyan-300">
-            Founder Profile
+            Business Profile
           </p>
           <h2 className="mt-4 text-4xl font-black tracking-tight text-white md:text-6xl">
             Leadership with local trust and long-term service values.
@@ -34,11 +34,11 @@ export default function FounderProfile() {
 
           <div className="space-y-6 rounded-[28px] border border-white/10 bg-white/[0.04] p-6 shadow-[0_24px_80px_rgba(0,0,0,0.2)] backdrop-blur-xl md:p-10">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-cyan-300">
+              <p className="text-3xl font-black tracking-tight text-white md:text-5xl">
                 Kamal Narayan Srivastava
               </p>
-              <h3 className="mt-3 text-3xl font-bold text-white md:text-4xl">
-                Founder &amp; Managing Director
+              <h3 className="mt-3 text-sm font-semibold uppercase tracking-[0.24em] text-cyan-300 md:text-base">
+                Managing Director
               </h3>
             </div>
 
