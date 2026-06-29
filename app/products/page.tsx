@@ -151,8 +151,8 @@ const futureCommerce = [
 ];
 
 const storeHours = [
-  "Monday to Saturday: 10:00 AM - 7:00 PM",
-  "Sunday: By appointment",
+  "ALL DAY: 10:00 AM - 8:30 PM",
+  // "Sunday: By appointment",
 ];
 
 const officeAddress =

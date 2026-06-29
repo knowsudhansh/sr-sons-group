@@ -105,7 +105,7 @@ export default function ShowroomSection() {
                 Opening Hours
               </p>
               <p className="mt-2 text-sm leading-6 text-gray-300">
-                Monday to Saturday, 10:00 AM to 7:00 PM.
+                ALL DAY, 10:00 AM to 8:30 PM.
               </p>
             </div>
           </div>

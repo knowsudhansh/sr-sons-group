@@ -10,6 +10,8 @@ import ShowroomSection from "@/components/rcs/ShowroomSection";
 import BusinessDivisions from "@/components/rcs/BusinessDivisions";
 import RCSWhyChoose from "@/components/rcs/RCSWhyChoose";
 import FeaturedProjects from "@/components/rcs/FeaturedProjects";
+import FounderProfile from "@/components/FounderProfile";
+import BrandCollaboration from "@/components/BrandCollaboration";
 
 export default function Home() {
   return (
@@ -49,6 +51,11 @@ export default function Home() {
         <RCSWhyChoose />
       </Reveal>
 
+      {/* Founder Profile */}
+      <Reveal>
+        <FounderProfile />
+      </Reveal>
+
       {/* Business Divisions */}
       <div className="hidden">
         <Reveal>
@@ -59,6 +66,11 @@ export default function Home() {
       {/* Contact Section */}
       <Reveal>
         <ContactCTA />
+      </Reveal>
+
+      {/* Brand Collaboration */}
+      <Reveal>
+        <BrandCollaboration />
       </Reveal>
 
       <Footer />
