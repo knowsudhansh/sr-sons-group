@@ -48,7 +48,7 @@ const services = [
     description:
       "Reliable support after purchase so the relationship continues beyond the showroom visit.",
     href:
-      "mailto:rcselectricalspvtltd@gmail.com?subject=Customer%20Service%20Enquiry&body=" +
+      "mailto:support@rcselectricals.com?subject=Customer%20Service%20Enquiry&body=" +
       encodeURIComponent(
         "Hello,\n\nI would like to know more about your customer support and after-sales services.\n\nThank you.",
       ),

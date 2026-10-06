@@ -18,7 +18,7 @@ Uttar Pradesh,
 India`;
 
 const phoneNumber = "+91 95546 78888";
-const emailAddress = "rcselectricalspvtltd@gmail.com";
+const emailAddress = "support@rcselectricals.com";
 
 const mapSrc = "https://www.google.com/maps?q=26.7287778,83.4316111&z=18&output=embed";
 

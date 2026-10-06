@@ -74,7 +74,7 @@ export default function Footer() {
             <p className="text-sm text-gray-400 mb-3 leading-relaxed">
               91-A/C 710, Kamal Niwas, Opp. Radisson Blu, Mohaddipur, Gorakhpur - 273008, Uttar Pradesh, India
             </p>
-            <p className="text-sm text-gray-400 mb-2">Email: rcselectricalspvtltd@gmail.com</p>
+            <p className="text-sm text-gray-400 mb-2">Email: support@rcselectricals.com</p>
             <p className="text-sm text-gray-400">Phone: +91 9554678888</p>
           </div>
         </div>
